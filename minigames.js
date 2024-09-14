@@ -54,5 +54,3 @@ function displayMinigames() {
     goldButton.onclick = startGoldMinigame;
     gameArea.appendChild(goldButton);
 }
-
-displayMinigames();
