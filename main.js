@@ -36,13 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'Enter':
                 characters.forEach(character => {
                     if (character !== protagonist && Math.abs(character.x - protagonist.x) < 32 && Math.abs(character.y - protagonist.y) < 32) {
-                        checkForTask(character);
-                    }
-                });
-                break;
-        }
-    }
-
-    document.addEventListener('keydown', handleKeyPress);
-    drawGame();
-});
+                        character.interact
