@@ -16,13 +16,16 @@ const tasks = [
     new Task("Trade with the Merchant", "Exchange goods with Ruby.", "75 Gold")
 ];
 
-function displayTasks() {
-    const gameArea = document.getElementById('game-area');
-    tasks.forEach(task => {
-        const taskElement = document.createElement('div');
-        taskElement.textContent = task.getTaskDetails();
-        gameArea.appendChild(taskElement);
-    });
+function startTask(task) {
+    alert(`Starting task: ${task.getTaskDetails()}`);
 }
 
-displayTasks();
+function checkForTask(character) {
+    if (character.role === "Town Elder") {
+        startTask(tasks[0]);
+    } else if (character.role === "Blacksmith") {
+        startTask(tasks[1]);
+    } else if (character.role === "Merchant") {
+        startTask(tasks[2]);
+    }
+}
