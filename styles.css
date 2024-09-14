@@ -17,8 +17,14 @@ main {
 }
 
 #game-area {
-    background-color: #fff;
+    background-color: #000;
     border: 1px solid #ccc;
     padding: 1rem;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    background-color: #87CEEB; /* Sky blue background */
 }
