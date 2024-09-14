@@ -9,10 +9,27 @@
 <body>
     <header>
         <h1>Forgotten Isles: Post-Modern Era</h1>
+        <nav>
+            <button onclick="showMenu()">Menu</button>
+            <button onclick="showTasks()">Tasks</button>
+            <button onclick="showCurrency()">Currency Exchange</button>
+        </nav>
     </header>
     <main>
         <section id="game-area">
             <canvas id="game-canvas" width="800" height="600"></canvas>
+        </section>
+        <section id="menu" class="hidden">
+            <h2>Menu</h2>
+            <!-- Menu options here -->
+        </section>
+        <section id="tasks" class="hidden">
+            <h2>Tasks</h2>
+            <ul id="task-list"></ul>
+        </section>
+        <section id="currency" class="hidden">
+            <h2>Currency Exchange</h2>
+            <!-- Currency exchange system here -->
         </section>
     </main>
     <script src="characters.js"></script>
@@ -21,4 +38,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-
