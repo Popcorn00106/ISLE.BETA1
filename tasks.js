@@ -18,6 +18,10 @@ const tasks = [
 
 function startTask(task) {
     alert(`Starting task: ${task.getTaskDetails()}`);
+    const taskList = document.getElementById('task-list');
+    const taskItem = document.createElement('li');
+    taskItem.textContent = task.getTaskDetails();
+    taskList.appendChild(taskItem);
 }
 
 function checkForTask(character) {
