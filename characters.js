@@ -15,6 +15,14 @@ class Character {
         ctx.fillStyle = 'red';
         ctx.fillRect(this.x, this.y, 32, 32); // Simple representation of the character
     }
+
+    interact() {
+        if (this.role === "Merchant") {
+            startTrading();
+        } else {
+            checkForTask(this);
+        }
+    }
 }
 
 const protagonist = new Character("Protagonist", "Player", "The player character who has lost their memory.", 100, 100);
