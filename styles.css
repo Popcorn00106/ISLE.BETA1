@@ -12,6 +12,23 @@ header {
     text-align: center;
 }
 
+nav {
+    margin-top: 1rem;
+}
+
+nav button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #777;
+}
+
 main {
     padding: 1rem;
 }
@@ -27,4 +44,8 @@ main {
 
 canvas {
     background-color: #87CEEB; /* Sky blue background */
+}
+
+.hidden {
+    display: none;
 }
